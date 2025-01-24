@@ -332,6 +332,7 @@ body {
   border-bottom: 1px solid #B1B5C3;
   margin-right: 30px;
   padding-bottom: 15px;
+  padding-right: 20px;
 }
 @media (min-width: 1200px) {
   .product-cart .container .navigationss .nav-l-wrap .link-navs {
@@ -351,6 +352,7 @@ body {
 }
 .product-cart .container .navigationss .nav-l-wrap .link-navs.active {
   color: #175DA5;
+  border-bottom: 1px solid #175DA5;
 }
 .product-cart .container .navigationss .nav-l-wrap .link-navs.active .num {
   background: #175DA5;
