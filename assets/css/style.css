@@ -31,6 +31,10 @@ body {
   color: #000;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -314,11 +318,97 @@ body {
   background: #f00;
 }
 
-.public-review .para {
+.public-review .swiper .swiper-wrapper .content-wrapper {
+  position: relative;
+  padding: 48px;
+  background: #E9EFF5;
+  border-radius: 32px;
+}
+@media (max-width: 768px) {
+  .public-review .swiper .swiper-wrapper .content-wrapper {
+    padding: 30px;
+  }
+}
+.public-review .swiper .swiper-wrapper .content-wrapper .img-info-wrap {
+  padding-bottom: 30px;
+}
+.public-review .swiper .swiper-wrapper .content-wrapper .img-info-wrap .im-info {
+  background: #fff;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 8px;
+  bottom: 0;
+  right: 0;
+}
+.public-review .swiper .swiper-wrapper .content-wrapper .quote {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 90px;
+}
+@media (max-width: 768px) {
+  .public-review .swiper .swiper-wrapper .content-wrapper .quote {
+    width: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+.public-review .swiper .swiper-wrapper .content-wrapper .para {
   color: #183B56;
+}
+.public-review .swiper .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 40px;
+  width: auto;
+  left: 35%;
+}
+@media (max-width: 991px) {
+  .public-review .swiper .swiper-pagination {
+    width: 100%;
+    left: 0;
+  }
+}
+.public-review .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #5A7184;
+  height: 8px;
+  width: 8px;
+}
+.public-review .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #EFF9F5;
+  border: 1px solid #183B56;
+  height: 10px;
+  width: 10px;
 }
 
 /*=== layout css start === */
+.footer {
+  font-family: "Poppins", serif;
+  color: #00356a;
+  background: #e9eff5;
+}
+.footer .main {
+  padding-block: 90px;
+}
+@media (max-width: 991px) {
+  .footer .main {
+    padding-block: 50px;
+  }
+}
+.footer .main a {
+  color: #00356a;
+}
+.footer .main a:hover {
+  color: #137c8f;
+}
+.footer .footer-bottom {
+  background: #00356A;
+  color: #ffffff;
+}
+
 /*===// end of layout css === */
 /*=== pages start === */
 /*===// end of pages  === *//*# sourceMappingURL=style.css.map */

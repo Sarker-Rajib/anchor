@@ -1,0 +1,26 @@
+.footer {
+    font-family: "Poppins", serif;
+    color: #00356a;
+    background: #e9eff5;
+
+    .main {
+        padding-block: 90px;
+
+        @media(max-width:991px) {
+            padding-block: 50px;
+        }
+
+        a {
+            color: #00356a;
+
+            &:hover {
+                color: #137c8f;
+            }
+        }
+    }
+
+    .footer-bottom {
+        background: #00356A;
+        color: #ffffff;
+    }
+}
