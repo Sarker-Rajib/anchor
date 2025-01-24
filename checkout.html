@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Anchor || Order Summery</title>
+    <title>Anchor || Checkout</title>
     <link
       rel="shortcut icon"
       href="assets/images/logo.png"
@@ -34,168 +34,132 @@
     <!-- === product-information section start === -->
     <section class="product-cart py-5">
       <div class="container">
-        <div class="navigationss py-4">
+        <div class="navigationss py-5">
           <div
             class="d-flex flex-wrap gap-3 align-items-center justify-content-between"
           >
             <div class="d-flex nav-l-wrap">
+              <a href="#" class="link-navs">
+                <p class="num">1</p>
+                <p>Shopping cart</p>
+              </a>
               <a href="#" class="link-navs active">
-                <p class="num"><i class="fas fa-chevron-left"></i></p>
-                <p>Your Orders</p>
+                <p class="num">2</p>
+                <p>Checkout details</p>
+              </a>
+              <a href="#" class="link-navs">
+                <p class="num">3</p>
+                <p>Order complete</p>
               </a>
             </div>
+            <a href="#" class="cont-btn">
+              <img
+                width="12"
+                class="me-2"
+                src="assets/images/al.png"
+                alt="al"
+              />
+              Continue shopping
+            </a>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-8">
-            <div class="cart-details order-details mb-4 mb-lg-5">
-              <div class="d-md-flex align-items-center justify-content-between">
-                <h2 class="font-medium text-3xl">
-                  Order ID: <span style="color: #2caae1">25693</span>
-                </h2>
-                <span class="d-flex align-items-center">
-                  <p class="text-lg">
-                    Status: <span style="color: #57b039">Shipped</span>
-                  </p>
-                  <p class="text-lg text-ash ms-3">01.05.2024</p>
-                </span>
-              </div>
-              <hr />
+        <div class="row gy-3">
+          <div class="col-md-7">
+            <div class="cart-details">
+              <h2 class="font-medium text-3xl pb-3">My Cart</h2>
 
-              <div class="address">
-                <p class="font-medium text-lg">
-                  Shipping Address:
-                  <span style="color: #929292"
-                    >No. 12 Main Street, Los Angels, CA 20056</span
-                  >
-                </p>
-                <p class="font-medium text-lg">
-                  Requisition Address:
-                  <span style="color: #929292"
-                    >No. 12 Main Street, Los Angels, CA 20056
-                  </span>
+              <div class="text-center pt-4 pt-xl-5">
+                <p class="conf">
+                  <img src="assets/images/tgg.png" alt="as" /> Cart has been
+                  updated
                 </p>
               </div>
-            </div>
-
-            <div class="cart-details order-details">
-              <div class="d-flex align-items-center justify-content-between">
-                <h2 class="font-medium text-3xl pb-3">Items in Your Order</h2>
-              </div>
-              <hr />
-              <!-- items-->
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="left">
-                    <input type="checkbox" checked />
-                    <div class="im-wrap">
-                      <img src="assets/images/thumb.png" alt="s" />
-                    </div>
-
-                    <div>
-                      <p class="font-medium text-lg" style="color: #1f2026">
-                        CRDO-FX
-                      </p>
-                      <p class="text-small font-medium text-small">
-                        Size: Small
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <div class="counter-container">
-                      <span class="counter text-black">3</span>
-                      <span class="ms-2">
-                        <button onclick="increase(this)">
-                          <i class="fal fa-chevron-up"></i>
-                        </button>
-                        <br />
-                        <button onclick="decrease(this)">
-                          <i class="fal fa-chevron-down"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p class="text-xl font-medium text-ash">$75.00</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="left">
-                    <input type="checkbox" checked />
-                    <div class="im-wrap">
-                      <img src="assets/images/thumb.png" alt="s" />
-                    </div>
-
-                    <div>
-                      <p class="font-medium text-lg" style="color: #1f2026">
-                        CRDO-FX
-                      </p>
-                      <p class="text-small font-medium text-small">
-                        Size: Small
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <div class="counter-container">
-                      <span class="counter text-black">3</span>
-                      <span class="ms-2">
-                        <button onclick="increase(this)">
-                          <i class="fal fa-chevron-up"></i>
-                        </button>
-                        <br />
-                        <button onclick="decrease(this)">
-                          <i class="fal fa-chevron-down"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p class="text-xl font-medium text-ash">$75.00</p>
-                  </div>
-                </div>
-              </div>
-              <!--  -->
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="cart-total">
-              <h2 class="text-3xl pb-3"><strong>Order Total</strong></h2>
-              <hr />
-              <div class="d-flex justify-content-between">
-                <p class="font-medium">Subtotal</p>
-                <p class="font-medium">$150.00</p>
-              </div>
-              <hr />
-
-              <div class="d-flex justify-content-between">
-                <p class="font-medium text-small">Shipping</p>
-                <p class="text-small font-medium">Free Shipping</p>
-              </div>
-
+              <h2 class="text-3xl pb-3"><strong>Your Order Summery</strong></h2>
               <br />
+              <div class="s-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="left d-flex align-items-center">
+                      <div class="im-wrap m-0 position-relative">
+                        <img src="assets/images/thumb.png" alt="s" />
+                        <span class="number">3</span>
+                      </div>
+                      <div class="ps-2">
+                        <p class="font-medium text-lg" style="color: #1f2026">
+                          CRDO-FX
+                        </p>
+                        <p class="text-small font-medium text-small">
+                          Size: Small
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-              <div class="d-flex justify-content-between">
-                <p class="text-small">Tax</p>
-                <p class="text-small">$0.00</p>
+                  <p class="text-xl text-ash font-medium">$75.00</p>
+                </div>
+              </div>
+              <hr />
+              <div class="s-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="left d-flex align-items-center">
+                      <div class="im-wrap m-0 position-relative">
+                        <img src="assets/images/thumb.png" alt="s" />
+                        <span class="number">3</span>
+                      </div>
+                      <div class="ps-2">
+                        <p class="font-medium text-lg" style="color: #1f2026">
+                          CRDO-FX
+                        </p>
+                        <p class="text-small font-medium text-small">
+                          Size: Small
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="text-xl text-ash font-medium">$75.00</p>
+                </div>
+              </div>
+              <hr />
+              <div class="s-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="left d-flex align-items-center">
+                      <div class="im-wrap m-0 position-relative">
+                        <img src="assets/images/thumb.png" alt="s" />
+                        <span class="number">3</span>
+                      </div>
+                      <div class="ps-2">
+                        <p class="font-medium text-lg" style="color: #1f2026">
+                          CRDO-FX
+                        </p>
+                        <p class="text-small font-medium text-small">
+                          Size: Small
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="text-xl text-ash font-medium">$75.00</p>
+                </div>
               </div>
 
               <hr />
-              <div
-                class="py-4 py-lg-5 d-flex justify-content-between align-items-center"
-              >
+              <div class="d-flex justify-content-between align-items-center">
                 <p class="font-medium">Total</p>
                 <p class="text-xl"><strong>$150.00</strong></p>
               </div>
               <br />
+              <button class="primary-button w-100" style="background: #2caae1">
+                Place Order
+              </button>
             </div>
           </div>
         </div>
