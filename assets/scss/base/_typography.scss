@@ -46,6 +46,18 @@ body {
   }
 }
 
+.text-3xl {
+  font-size: 30px;
+
+  @media(max-width: 767px) {
+    font-size: 24px;
+  }
+
+  @media(max-width: 991px) {
+    font-size: 26px;
+  }
+}
+
 .text-4xl {
   font-size: 36px;
 
@@ -78,4 +90,12 @@ body {
   @media(max-width:767px) {
     font-size: 40px;
   }
+}
+
+.color-primary {
+  color: #175DA5;
+}
+
+.color-secondary {
+  color: #2CAAE1;
 }

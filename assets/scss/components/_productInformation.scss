@@ -1,0 +1,104 @@
+.product-information {
+    font-family: "Poppins", serif;
+
+    .container {
+        @media(min-width: 1500px) {
+            max-width: 1440px;
+        }
+
+        .product-display {
+            .main-display {
+                height: 100%;
+
+                .swiper-wrapper {
+                    height: 100% !important;
+
+                    .swiper-slide {
+                        height: 100% !important;
+                    }
+
+                }
+            }
+
+            .thumb-m {
+                background: #fff;
+                border: 1px solid #c1c8ce9d;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+            }
+        }
+
+        .select-m {
+            background: #175ea52f;
+            border: 0;
+            font-size: 22px;
+            color: #175DA5;
+            padding: 10px 40px;
+            border-radius: 8px;
+        }
+
+        .p-amount {
+            display: flex;
+            align-items: center;
+            background: #175ea52f;
+            color: #175DA5;
+            width: fit-content;
+            border-radius: 8px;
+            padding: 10px;
+
+            p {
+                padding-inline: 5px;
+                width: 40px;
+                text-align: center;
+            }
+
+            button {
+                color: #175DA5;
+                font-size: 22px;
+            }
+        }
+
+
+
+        .prod-nav-tab {
+
+            .nav-tabs {
+                border-bottom: 3px solid #E5E8EA;
+
+                .nav-item {
+
+                    .nav-link {
+                        color: #C5C5C5;
+                        border: 0;
+                        background: transparent;
+                        font-size: 18px;
+
+                        &.active {
+                            color: #175DA5;
+                            border-bottom: 3px solid #175DA5;
+                        }
+                    }
+                }
+            }
+
+            .tab-content {
+                .tab-pane {
+                    padding: 35px;
+
+                    @media(max-width:991px) {
+                        padding: 20px;
+                    }
+
+                    ul {
+                        li {
+                            list-style: disc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
