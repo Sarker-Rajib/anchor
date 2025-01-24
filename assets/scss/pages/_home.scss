@@ -1,0 +1,130 @@
+.home-banner {
+    font-family: "Poppins", serif;
+    color: #fff;
+
+    .container {
+        max-width: 1780px;
+
+        .wrapper {
+            background: #073FA0;
+            border-radius: 50px;
+            padding: 45px;
+
+            .text {
+                @media(min-width:1300px) {
+                    padding-block: 60px;
+                    padding-left: 60px;
+                }
+
+                .heading {
+                    font-weight: 600;
+                    font-size: 60px;
+
+                    @media(max-width: 767px) {
+                        font-size: 40px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.products {
+
+    .product-card {
+        border-radius: 25px;
+        transition: all 0.3s ease;
+
+
+        .product-img-container {
+            background-color: #ececec;
+            border-radius: 25px;
+            border-bottom-left-radius: 0px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .product-img {
+            background-color: #2caae1;
+            padding: 20px;
+            border-radius: 14px;
+
+            img {
+                height: auto;
+                transition: all 0.3s ease;
+            }
+        }
+
+        &:hover {
+            .product-img img {
+                transform: scale(1.1);
+            }
+        }
+
+        .text {
+            width: 100%;
+            padding: 0px 20px 20px 20px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            background-color: #ececec;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -25px;
+                right: -50px;
+                width: 100%;
+                height: 75%;
+                background: #ececec;
+                border-radius: 25px;
+            }
+
+            h3 {
+                color: #423E3E;
+            }
+
+            p {
+                font-family: "Lato", serif;
+            }
+        }
+
+        .link {
+            background-color: #fff;
+            padding: 1rem;
+            padding-right: 0;
+            padding-bottom: 5px;
+            border-radius: 50px;
+            display: grid;
+            place-items: center;
+        }
+
+
+
+
+        a {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #175da5;
+            color: #fff;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #f00;
+            }
+        }
+
+    }
+}
+
+.public-review {
+    .para {
+        color: #183B56;
+    }
+}
+
+// font-family: "Lato", serif;

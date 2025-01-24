@@ -1,0 +1,48 @@
+.primary-button {
+    display: inline-block;
+    background: #175DA5;
+    color: #fff;
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+
+    @media(max-width: 1200px) {
+        padding: 10px;
+    }
+
+    &::placeholder {
+        color: #898989;
+    }
+}
+
+.secondary-button {
+    display: inline-block;
+    background: #fff;
+    color: #073FA0;
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+
+    @media(max-width: 1200px) {
+        padding: 10px;
+    }
+
+    &::placeholder {
+        color: #898989;
+    }
+
+    &:hover {
+        background: #fff;
+        color: #175DA5;
+    }
+
+    img {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

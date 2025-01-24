@@ -1,0 +1,30 @@
+.login-content {
+    padding: 20px;
+
+    .heading {
+        font-size: 44px;
+        font-weight: 600;
+        color: #202020;
+
+        
+        @media(max-width: 991px) {
+           font-size: 36px;
+        }
+    }
+
+    .user-input {
+        border: 1px solid #898989;
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+
+
+        @media(max-width: 1200px) {
+            padding: 10px;
+        }
+    }
+
+    .link:hover {
+        color: #175DA5;
+    }
+}
