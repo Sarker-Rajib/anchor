@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*=== abstracts css start === */
 /*===// end of abstracts css === */
 /*=== base css start === */
@@ -222,6 +223,16 @@ body {
   border-radius: 8px;
 }
 
+.ash-button {
+  font-family: "Inter", serif;
+  background: #e3eaf1;
+  border: 0;
+  font-size: 22px;
+  color: #00356a;
+  padding: 10px 40px;
+  border-radius: 8px;
+}
+
 .product-information {
   font-family: "Poppins", serif;
 }
@@ -298,6 +309,152 @@ body {
 }
 .product-information .container .prod-nav-tab .tab-content .tab-pane ul li {
   list-style: disc;
+}
+
+.product-cart {
+  font-family: "Inter", serif;
+  /* Style when checkbox is checked */
+}
+@media (min-width: 1300px) {
+  .product-cart .container {
+    max-width: 1240px;
+  }
+}
+@media (max-width: 767px) {
+  .product-cart .container .navigationss .nav-l-wrap {
+    overflow: scroll;
+  }
+}
+.product-cart .container .navigationss .nav-l-wrap .link-navs {
+  color: #B1B5C3;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #B1B5C3;
+  margin-right: 30px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .product-cart .container .navigationss .nav-l-wrap .link-navs {
+    margin-right: 40px;
+  }
+}
+.product-cart .container .navigationss .nav-l-wrap .link-navs .num {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B1B5C3;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.product-cart .container .navigationss .nav-l-wrap .link-navs.active {
+  color: #175DA5;
+}
+.product-cart .container .navigationss .nav-l-wrap .link-navs.active .num {
+  background: #175DA5;
+}
+.product-cart .container .navigationss .cont-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #175DA5;
+  color: #175DA5;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.product-cart .container .cart-details {
+  background: #fff;
+  padding: 48px;
+  border: 1px solid #E6E6E6;
+  border-radius: 15px;
+}
+@media (max-width: 991px) {
+  .product-cart .container .cart-details {
+    padding: 20px;
+  }
+}
+.product-cart .container .cart-details .selection {
+  border: 1px solid #EDEDED;
+  border-radius: 8px;
+  padding: 10px;
+}
+.product-cart .container .cart-details .s-item {
+  padding-block: 30px;
+  border-bottom: 1px solid #EDEDED;
+}
+.product-cart .container .cart-details .s-item .left {
+  display: flex;
+  align-items: center;
+}
+.product-cart .container .cart-details .s-item .left .im-wrap {
+  border: 3px solid #EEEEEE;
+  margin-inline: 10px;
+  width: 80px;
+  text-align: center;
+}
+.product-cart .container .cart-details .s-item .right {
+  color: #777E90;
+}
+.product-cart .container .cart-details .s-item .right .counter-container {
+  width: 60px;
+  padding: 0px 10px;
+  background: #FCFCFD;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.13);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(119, 126, 144, 0.1725490196);
+}
+.product-cart .container .cart-details .s-item .right .counter-container button {
+  background: transparent;
+  border: 0;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0;
+}
+.product-cart .container .cart-details .conf {
+  border: 2px solid #EDEDED;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-weight: 600;
+}
+.product-cart .container .cart-total {
+  padding: 48px;
+  background: #fff;
+  color: #1F2026;
+  border: 1px solid #E6E6E6;
+  border-radius: 15px;
+}
+@media (max-width: 991px) {
+  .product-cart .container .cart-total {
+    padding: 20px;
+  }
+}
+.product-cart input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #B2BEB5;
+  /* Ash color */
+  border-radius: 4px;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.product-cart input[type=checkbox]:checked::before {
+  content: "✓";
+  /* Tick mark */
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*===// end of components css === */
