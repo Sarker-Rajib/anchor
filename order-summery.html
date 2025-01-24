@@ -34,163 +34,170 @@
     <!-- === product-information section start === -->
     <section class="product-cart py-5">
       <div class="container">
-        <div class="navigationss py-5">
+        <div class="navigationss py-4">
           <div
             class="d-flex flex-wrap gap-3 align-items-center justify-content-between"
           >
             <div class="d-flex nav-l-wrap">
               <a href="#" class="link-navs active">
-                <p class="num">1</p>
+                <p class="num"><i class="fas fa-chevron-left"></i></p>
                 <p>Your Orders</p>
               </a>
             </div>
-
-            <a href="#" class="light-blue-button">See All</a>
           </div>
         </div>
 
-        <div class="cart-details order-details mb-4 mb-lg-5">
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="font-medium text-3xl pb-3">
-              Order ID: <span style="color: #2caae1">25693</span>
-            </h2>
-            <span class="d-flex align-items-center">
-              <p class="text-lg">
-                Status: <span style="color: #57b039">Shipped</span>
-              </p>
-              <p class="text-lg text-ash ms-3">01.05.2024</p>
-            </span>
-          </div>
-          <hr />
-          <!-- items-->
-          <div class="s-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="left">
-                <input type="checkbox" checked />
-                <div class="im-wrap">
-                  <img src="assets/images/thumb.png" alt="s" />
-                </div>
-
-                <div>
-                  <p class="font-medium text-lg" style="color: #1f2026">
-                    CRDO-FX
+        <div class="row">
+          <div class="col-md-8">
+            <div class="cart-details order-details mb-4 mb-lg-5">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <h2 class="font-medium text-3xl">
+                  Order ID: <span style="color: #2caae1">25693</span>
+                </h2>
+                <span class="d-flex align-items-center">
+                  <p class="text-lg">
+                    Status: <span style="color: #57b039">Shipped</span>
                   </p>
-                  <p class="text-small font-medium text-small">Size: Small</p>
-                </div>
+                  <p class="text-lg text-ash ms-3">01.05.2024</p>
+                </span>
               </div>
+              <hr />
 
-              <div class="right">
-                <div class="counter-container">
-                  <span class="counter text-black">3</span>
-                  <span class="ms-2">
-                    <button onclick="increase(this)">
-                      <i class="fal fa-chevron-up"></i>
-                    </button>
-                    <br />
-                    <button onclick="decrease(this)">
-                      <i class="fal fa-chevron-down"></i>
-                    </button>
+              <div class="address">
+                <p class="font-medium text-lg">
+                  Shipping Address:
+                  <span style="color: #929292"
+                    >No. 12 Main Street, Los Angels, CA 20056</span
+                  >
+                </p>
+                <p class="font-medium text-lg">
+                  Requisition Address:
+                  <span style="color: #929292"
+                    >No. 12 Main Street, Los Angels, CA 20056
                   </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="cart-details order-details">
+              <div class="d-flex align-items-center justify-content-between">
+                <h2 class="font-medium text-3xl pb-3">Items in Your Order</h2>
+              </div>
+              <hr />
+              <!-- items-->
+              <div class="s-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="left">
+                    <input type="checkbox" checked />
+                    <div class="im-wrap">
+                      <img src="assets/images/thumb.png" alt="s" />
+                    </div>
+
+                    <div>
+                      <p class="font-medium text-lg" style="color: #1f2026">
+                        CRDO-FX
+                      </p>
+                      <p class="text-small font-medium text-small">
+                        Size: Small
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="right">
+                    <div class="counter-container">
+                      <span class="counter text-black">3</span>
+                      <span class="ms-2">
+                        <button onclick="increase(this)">
+                          <i class="fal fa-chevron-up"></i>
+                        </button>
+                        <br />
+                        <button onclick="decrease(this)">
+                          <i class="fal fa-chevron-down"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p class="text-xl font-medium text-ash">$75.00</p>
+                  </div>
                 </div>
               </div>
 
-              <div>
-                <p class="text-xl font-medium text-ash">$75.00</p>
+              <div class="s-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="left">
+                    <input type="checkbox" checked />
+                    <div class="im-wrap">
+                      <img src="assets/images/thumb.png" alt="s" />
+                    </div>
+
+                    <div>
+                      <p class="font-medium text-lg" style="color: #1f2026">
+                        CRDO-FX
+                      </p>
+                      <p class="text-small font-medium text-small">
+                        Size: Small
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="right">
+                    <div class="counter-container">
+                      <span class="counter text-black">3</span>
+                      <span class="ms-2">
+                        <button onclick="increase(this)">
+                          <i class="fal fa-chevron-up"></i>
+                        </button>
+                        <br />
+                        <button onclick="decrease(this)">
+                          <i class="fal fa-chevron-down"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p class="text-xl font-medium text-ash">$75.00</p>
+                  </div>
+                </div>
               </div>
+              <!--  -->
             </div>
           </div>
 
-          <div class="s-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="left">
-                <input type="checkbox" checked />
-                <div class="im-wrap">
-                  <img src="assets/images/thumb.png" alt="s" />
-                </div>
+          <div class="col-md-4">
+            <div class="cart-total">
+              <h2 class="text-3xl pb-3"><strong>Order Total</strong></h2>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <p class="font-medium">Subtotal</p>
+                <p class="font-medium">$150.00</p>
+              </div>
+              <hr />
 
-                <div>
-                  <p class="font-medium text-lg" style="color: #1f2026">
-                    CRDO-FX
-                  </p>
-                  <p class="text-small font-medium text-small">Size: Small</p>
-                </div>
+              <div class="d-flex justify-content-between">
+                <p class="font-medium text-small">Shipping</p>
+                <p class="text-small font-medium">Free Shipping</p>
               </div>
 
-              <div class="right">
-                <div class="counter-container">
-                  <span class="counter text-black">3</span>
-                  <span class="ms-2">
-                    <button onclick="increase(this)">
-                      <i class="fal fa-chevron-up"></i>
-                    </button>
-                    <br />
-                    <button onclick="decrease(this)">
-                      <i class="fal fa-chevron-down"></i>
-                    </button>
-                  </span>
-                </div>
+              <br />
+
+              <div class="d-flex justify-content-between">
+                <p class="text-small">Tax</p>
+                <p class="text-small">$0.00</p>
               </div>
 
-              <div>
-                <p class="text-xl font-medium text-ash">$75.00</p>
+              <hr />
+              <div
+                class="py-4 py-lg-5 d-flex justify-content-between align-items-center"
+              >
+                <p class="font-medium">Total</p>
+                <p class="text-xl"><strong>$150.00</strong></p>
               </div>
+              <br />
             </div>
           </div>
-          <!--  -->
-        </div>
-
-        <div class="cart-details order-details">
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="font-medium text-3xl pb-3">
-              Order ID: <span style="color: #2caae1">25693</span>
-            </h2>
-            <span class="d-flex align-items-center">
-              <p class="text-lg">
-                Status: <span style="color: #57b039">Shipped</span>
-              </p>
-              <p class="text-lg text-ash ms-3">01.05.2024</p>
-            </span>
-          </div>
-          <hr />
-          <!-- items-->
-          <div class="s-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="left">
-                <input type="checkbox" checked />
-                <div class="im-wrap">
-                  <img src="assets/images/thumb.png" alt="s" />
-                </div>
-
-                <div>
-                  <p class="font-medium text-lg" style="color: #1f2026">
-                    CRDO-FX
-                  </p>
-                  <p class="text-small font-medium text-small">Size: Small</p>
-                </div>
-              </div>
-
-              <div class="right">
-                <div class="counter-container">
-                  <span class="counter text-black">3</span>
-                  <span class="ms-2">
-                    <button onclick="increase(this)">
-                      <i class="fal fa-chevron-up"></i>
-                    </button>
-                    <br />
-                    <button onclick="decrease(this)">
-                      <i class="fal fa-chevron-down"></i>
-                    </button>
-                  </span>
-                </div>
-              </div>
-
-              <div>
-                <p class="text-xl font-medium text-ash">$75.00</p>
-              </div>
-            </div>
-          </div>
-
-          <!--  -->
         </div>
       </div>
     </section>
