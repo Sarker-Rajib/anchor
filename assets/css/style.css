@@ -254,6 +254,9 @@ body {
 }
 .product-information .container .product-display .main-display .swiper-wrapper .swiper-slide {
   height: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product-information .container .product-display .thumb-m {
   background: #fff;

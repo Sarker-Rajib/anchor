@@ -31,177 +31,444 @@
   </head>
 
   <body style="background: #f9f9f9">
-    <!-- === product-information section start === -->
-    <section class="product-cart py-5">
-      <div class="container">
-        <div class="navigationss py-4">
-          <div
-            class="d-flex flex-wrap gap-3 align-items-center justify-content-between"
-          >
-            <div class="d-flex nav-l-wrap">
-              <a href="#" class="link-navs active">
-                <p class="num"><i class="fas fa-chevron-left"></i></p>
-                <p>Your Orders</p>
-              </a>
-            </div>
-          </div>
-        </div>
+    <!-- === header section start === -->
+    <header class="header">
+      <div class="nav-top bg-dark" style="padding-block: 12px">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="text-white font-medium text-small">
+              Free delivery on orders over $50
+            </p>
 
-        <div class="row">
-          <div class="col-md-8">
-            <div class="cart-details order-details mb-4">
-              <div class="d-md-flex align-items-center justify-content-between">
-                <h2 class="font-medium text-3xl">
-                  Order ID: <span style="color: #2caae1">25693</span>
-                </h2>
-                <span class="d-flex align-items-center">
-                  <p class="text-lg">
-                    Status: <span style="color: #57b039">Shipped</span>
-                  </p>
-                  <p class="text-lg text-ash ms-3">01.05.2024</p>
-                </span>
-              </div>
-              <hr />
-
-              <div class="address">
-                <p class="font-medium text-lg">
-                  Shipping Address:
-                  <span style="color: #929292"
-                    >No. 12 Main Street, Los Angels, CA 20056</span
-                  >
-                </p>
-                <p class="font-medium text-lg">
-                  Requisition Address:
-                  <span style="color: #929292"
-                    >No. 12 Main Street, Los Angels, CA 20056
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            <div class="cart-details order-details">
-              <div class="d-flex align-items-center justify-content-between">
-                <h2 class="font-medium text-3xl pb-3">Items in Your Order</h2>
-              </div>
-              <hr />
-              <!-- items-->
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="left">
-                    <input type="checkbox" checked />
-                    <div class="im-wrap">
-                      <img src="assets/images/thumb.png" alt="s" />
-                    </div>
-
-                    <div>
-                      <p class="font-medium text-lg" style="color: #1f2026">
-                        CRDO-FX
-                      </p>
-                      <p class="text-small font-medium text-small">
-                        Size: Small
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <div class="counter-container">
-                      <span class="counter text-black">3</span>
-                      <span class="ms-2">
-                        <button onclick="increase(this)">
-                          <i class="fal fa-chevron-up"></i>
-                        </button>
-                        <br />
-                        <button onclick="decrease(this)">
-                          <i class="fal fa-chevron-down"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p class="text-xl font-medium text-ash">$75.00</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="left">
-                    <input type="checkbox" checked />
-                    <div class="im-wrap">
-                      <img src="assets/images/thumb.png" alt="s" />
-                    </div>
-
-                    <div>
-                      <p class="font-medium text-lg" style="color: #1f2026">
-                        CRDO-FX
-                      </p>
-                      <p class="text-small font-medium text-small">
-                        Size: Small
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="right">
-                    <div class="counter-container">
-                      <span class="counter text-black">3</span>
-                      <span class="ms-2">
-                        <button onclick="increase(this)">
-                          <i class="fal fa-chevron-up"></i>
-                        </button>
-                        <br />
-                        <button onclick="decrease(this)">
-                          <i class="fal fa-chevron-down"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p class="text-xl font-medium text-ash">$75.00</p>
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="cart-total">
-              <h2 class="text-3xl pb-3"><strong>Order Total</strong></h2>
-              <hr />
-              <div class="d-flex justify-content-between">
-                <p class="font-medium">Subtotal</p>
-                <p class="font-medium">$150.00</p>
-              </div>
-              <hr />
-
-              <div class="d-flex justify-content-between">
-                <p class="font-medium text-small">Shipping</p>
-                <p class="text-small font-medium">Free Shipping</p>
-              </div>
-
-              <br />
-
-              <div class="d-flex justify-content-between">
-                <p class="text-small">Tax</p>
-                <p class="text-small">$0.00</p>
-              </div>
-
-              <hr />
-              <div
-                class="py-4 py-lg-5 d-flex justify-content-between align-items-center"
-              >
-                <p class="font-medium">Total</p>
-                <p class="text-xl"><strong>$150.00</strong></p>
-              </div>
-              <br />
-            </div>
+            <ul class="p-0 d-flex align-items-center">
+              <li>
+                <a href="#"><img src="assets/images/fb.svg" alt="icon" /></a>
+              </li>
+              <li class="ms-3">
+                <a href="#"><img src="assets/images/insta.svg" alt="icon" /></a>
+              </li>
+              <li class="ms-3">
+                <a href="#">
+                  <img src="assets/images/pinerest.svg" alt="icon" />
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="#"><img src="assets/images/twit.svg" alt="icon" /></a>
+              </li>
+              <li class="ms-3">
+                <a href="#"><img src="assets/images/tik.svg" alt="icon" /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ===//end of product-information section === -->
+
+      <div class="container">
+        <nav class="navbar navbar-expand-lg position-relative">
+          <img
+            class="brand-image d-none d-lg-block"
+            src="assets/images/logo-main.png"
+            alt="logo"
+          />
+
+          <img class="d-lg-none" src="assets/images/logo-main.png" alt="logo" />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav icon d-flex ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-lg-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/images/flag.png" alt="ame" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img src="assets/images/flag.png" alt="ame" /><span
+                        class="ms-2"
+                        >Text</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img src="assets/images/flag.png" alt="ame" /><span
+                        class="ms-2"
+                        >Text</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item pe-lg-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">GBP</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">POUND</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="far fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="far fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="far fa-heart"></i>
+                  <span class="t-num">3</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="far fa-shopping-cart"></i>
+                  <span class="t-num">3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- === end of header section === -->
+
+    <main>
+      <!-- === product-information section start === -->
+      <section class="product-cart py-5">
+        <div class="container">
+          <div class="navigationss py-4">
+            <div
+              class="d-flex flex-wrap gap-3 align-items-center justify-content-between"
+            >
+              <div class="d-flex nav-l-wrap">
+                <a href="#" class="link-navs active">
+                  <p class="num"><i class="fas fa-chevron-left"></i></p>
+                  <p>Your Orders</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="cart-details order-details mb-4">
+                <div
+                  class="d-md-flex align-items-center justify-content-between"
+                >
+                  <h2 class="font-medium text-3xl">
+                    Order ID: <span style="color: #2caae1">25693</span>
+                  </h2>
+                  <span class="d-flex align-items-center">
+                    <p class="text-lg">
+                      Status: <span style="color: #57b039">Shipped</span>
+                    </p>
+                    <p class="text-lg text-ash ms-3">01.05.2024</p>
+                  </span>
+                </div>
+                <hr />
+
+                <div class="address">
+                  <p class="font-medium text-lg">
+                    Shipping Address:
+                    <span style="color: #929292"
+                      >No. 12 Main Street, Los Angels, CA 20056</span
+                    >
+                  </p>
+                  <p class="font-medium text-lg">
+                    Requisition Address:
+                    <span style="color: #929292"
+                      >No. 12 Main Street, Los Angels, CA 20056
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="cart-details order-details">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h2 class="font-medium text-3xl pb-3">Items in Your Order</h2>
+                </div>
+                <hr />
+                <!-- items-->
+                <div class="s-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="left">
+                      <input type="checkbox" checked />
+                      <div class="im-wrap">
+                        <img src="assets/images/thumb.png" alt="s" />
+                      </div>
+
+                      <div>
+                        <p class="font-medium text-lg" style="color: #1f2026">
+                          CRDO-FX
+                        </p>
+                        <p class="text-small font-medium text-small">
+                          Size: Small
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <div class="counter-container">
+                        <span class="counter text-black">3</span>
+                        <span class="ms-2">
+                          <button onclick="increase(this)">
+                            <i class="fal fa-chevron-up"></i>
+                          </button>
+                          <br />
+                          <button onclick="decrease(this)">
+                            <i class="fal fa-chevron-down"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="text-xl font-medium text-ash">$75.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="s-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="left">
+                      <input type="checkbox" checked />
+                      <div class="im-wrap">
+                        <img src="assets/images/thumb.png" alt="s" />
+                      </div>
+
+                      <div>
+                        <p class="font-medium text-lg" style="color: #1f2026">
+                          CRDO-FX
+                        </p>
+                        <p class="text-small font-medium text-small">
+                          Size: Small
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <div class="counter-container">
+                        <span class="counter text-black">3</span>
+                        <span class="ms-2">
+                          <button onclick="increase(this)">
+                            <i class="fal fa-chevron-up"></i>
+                          </button>
+                          <br />
+                          <button onclick="decrease(this)">
+                            <i class="fal fa-chevron-down"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="text-xl font-medium text-ash">$75.00</p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="cart-total">
+                <h2 class="text-3xl pb-3"><strong>Order Total</strong></h2>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <p class="font-medium">Subtotal</p>
+                  <p class="font-medium">$150.00</p>
+                </div>
+                <hr />
+
+                <div class="d-flex justify-content-between">
+                  <p class="font-medium text-small">Shipping</p>
+                  <p class="text-small font-medium">Free Shipping</p>
+                </div>
+
+                <br />
+
+                <div class="d-flex justify-content-between">
+                  <p class="text-small">Tax</p>
+                  <p class="text-small">$0.00</p>
+                </div>
+
+                <hr />
+                <div
+                  class="py-4 py-lg-5 d-flex justify-content-between align-items-center"
+                >
+                  <p class="font-medium">Total</p>
+                  <p class="text-xl"><strong>$150.00</strong></p>
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===//end of product-information section === -->
+    </main>
+
+    <!-- off canvas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-body">
+        <div class="cart-total">
+          <h2 class="text-3xl pb-3"><strong>Your Order Summery</strong></h2>
+          <br />
+          <div class="s-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="left d-flex align-items-center">
+                  <div class="im-wrap m-0 position-relative">
+                    <img src="assets/images/thumb.png" alt="s" />
+                    <span class="number">3</span>
+                  </div>
+                  <div class="ps-2">
+                    <p class="font-medium text-lg" style="color: #1f2026">
+                      CRDO-FX
+                    </p>
+                    <p class="text-small font-medium text-small">Size: Small</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xl text-ash font-medium">$75.00</p>
+            </div>
+          </div>
+          <hr />
+          <div class="s-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="left d-flex align-items-center">
+                  <div class="im-wrap m-0 position-relative">
+                    <img src="assets/images/thumb.png" alt="s" />
+                    <span class="number">3</span>
+                  </div>
+                  <div class="ps-2">
+                    <p class="font-medium text-lg" style="color: #1f2026">
+                      CRDO-FX
+                    </p>
+                    <p class="text-small font-medium text-small">Size: Small</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xl text-ash font-medium">$75.00</p>
+            </div>
+          </div>
+          <hr />
+          <div class="s-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="left d-flex align-items-center">
+                  <div class="im-wrap m-0 position-relative">
+                    <img src="assets/images/thumb.png" alt="s" />
+                    <span class="number">3</span>
+                  </div>
+                  <div class="ps-2">
+                    <p class="font-medium text-lg" style="color: #1f2026">
+                      CRDO-FX
+                    </p>
+                    <p class="text-small font-medium text-small">Size: Small</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xl text-ash font-medium">$75.00</p>
+            </div>
+          </div>
+
+          <hr />
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="font-medium">Total</p>
+            <p class="text-xl"><strong>$150.00</strong></p>
+          </div>
+          <br />
+          <button
+            type="button"
+            class="btn cont-btn p-2 d-block rounded text-center mb-2 w-100"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            style="border: 1px solid #175da5; color: #175da5"
+          >
+            <img width="12" class="me-2" src="assets/images/al.png" alt="al" />
+            Continue shopping
+          </button>
+
+          <button class="primary-button w-100" style="background: #2caae1">
+            Place Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- off canvas end -->
 
     <!-- === footer section start === -->
     <footer class="footer">

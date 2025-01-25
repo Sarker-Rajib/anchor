@@ -31,398 +31,682 @@
   </head>
 
   <body style="background: #f9f9f9">
-    <!-- === product-information section start === -->
-    <section class="product-cart py-5">
-      <div class="container">
-        <div class="navigationss py-5">
-          <div
-            class="d-flex flex-wrap gap-3 align-items-center justify-content-between"
-          >
-            <div class="d-flex nav-l-wrap">
-              <a href="#" class="link-navs">
-                <p class="num">1</p>
-                <p>Shopping cart</p>
-              </a>
-              <a href="#" class="link-navs active">
-                <p class="num">2</p>
-                <p>Checkout details</p>
-              </a>
-              <a href="#" class="link-navs">
-                <p class="num">3</p>
-                <p>Order complete</p>
-              </a>
-            </div>
-            <a href="#" class="cont-btn">
-              <img
-                width="12"
-                class="me-2"
-                src="assets/images/al.png"
-                alt="al"
-              />
-              Continue shopping
-            </a>
-          </div>
-        </div>
+    <!-- === header section start === -->
+    <header class="header">
+      <div class="nav-top bg-dark" style="padding-block: 12px">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="text-white font-medium text-small">
+              Free delivery on orders over $50
+            </p>
 
-        <div class="row gy-3">
-          <div class="col-md-7">
-            <div class="cart-details payments">
-              <h2 class="font-medium text-3xl pb-3">Payment Method</h2>
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="pills-paypal-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-home"
-                    aria-selected="true"
-                  >
-                    Paypal
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-creditCard-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-profile"
-                    aria-selected="false"
-                  >
-                    Credit Card
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-home"
-                  role="tabpanel"
-                  aria-labelledby="pills-paypal-tab"
-                  tabindex="0"
-                >
-                  <div class="paypal">
-                    <div class="border rounded p-4">
-                      <p class="font-medium text-lg">Your Information</p>
-
-                      <div
-                        class="py-2 my-2 p-3 rounded d-flex align-items-center"
-                        style="background: #dcf5d4"
-                      >
-                        <img
-                          width="22"
-                          src="assets/images/gtc.png"
-                          alt="green-tick"
-                        />
-                        <p class="text-ex-small ps-2">
-                          Congratulations! Your details have been successfully
-                          sent to the store.
-                        </p>
-                      </div>
-
-                      <hr />
-
-                      <div class="row gy-2">
-                        <div class="col-md-4">
-                          <p class="text-ash text-small">Full Name</p>
-                          <p class="font-medium text-small">David King</p>
-                        </div>
-                        <div class="col-md-5">
-                          <p class="text-ash text-small">Full Name</p>
-                          <p class="font-medium text-small">
-                            davidking@gmail.com
-                          </p>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="text-ash text-small">Full Name</p>
-                          <p class="font-medium text-small">+00000000</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br />
-
-                    <div class="border rounded p-4">
-                      <p class="font-medium text-xl pb-3">Login to Paypal</p>
-
-                      <div class="py-2">
-                        <label class="pb-2 text-ash text-small"
-                          >Eail or Phone Number</label
-                        >
-                        <div class="d-flex align-items-center gap-2">
-                          <div class="flex-grow-1">
-                            <input
-                              class="green-input w-100"
-                              type="text"
-                              value="David King"
-                            />
-                          </div>
-                          <div style="min-width: 24px">
-                            <img src="assets/images/gt1.png" alt="g-tick" />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="py-2 pb-3">
-                        <label class="pb-2 text-ash text-small"
-                          >Your Password *</label
-                        >
-                        <div class="d-flex align-items-center gap-2">
-                          <div class="flex-grow-1">
-                            <input
-                              class="green-input w-100"
-                              type="password"
-                              value="David King"
-                            />
-                          </div>
-                          <div style="min-width: 24px">
-                            <img src="assets/images/gt1.png" alt="g-tick" />
-                          </div>
-                        </div>
-                      </div>
-
-                      <button
-                        class="primary-button px-5"
-                        style="background: #2caae1"
-                      >
-                        Sign in to Paypal
-                      </button>
-
-                      <div class="d-flex pt-3">
-                        <input type="checkbox" checked />
-                        <span class="text-small font-medium ms-2"
-                          >Save PayPal Account</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-profile"
-                  role="tabpanel"
-                  aria-labelledby="pills-creditCard-tab"
-                  tabindex="0"
-                >
-                  <div class="credit-card">
-                    <div class="border rounded p-4">
-                      <p class="font-medium text-lg">Your Information</p>
-
-                      <div
-                        class="py-2 my-2 p-3 rounded d-flex align-items-center"
-                        style="background: #dcf5d4"
-                      >
-                        <img
-                          width="22"
-                          src="assets/images/gtc.png"
-                          alt="green-tick"
-                        />
-                        <p class="text-ex-small ps-2">
-                          Congratulations! Your details have been successfully
-                          sent to the store.
-                        </p>
-                      </div>
-
-                      <hr />
-
-                      <div class="row gy-2">
-                        <div class="col-md-4">
-                          <p class="text-ash text-small">Full Name</p>
-                          <p class="font-medium text-small">David King</p>
-                        </div>
-                        <div class="col-md-5">
-                          <p class="text-ash text-small">Full Name</p>
-                          <p class="font-medium text-small">
-                            davidking@gmail.com
-                          </p>
-                        </div>
-                        <div class="col-md-3">
-                          <p class="text-ash text-small">Full Name</p>
-                          <p class="font-medium text-small">+00000000</p>
-                        </div>
-                        <div class="col-12">
-                          <p class="text-ash text-small">Address</p>
-                          <p class="font-medium text-small">
-                            +No. 12 Main Street, Los Angels, CA 20056
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br />
-
-                    <div class="border rounded p-4">
-                      <p class="font-medium text-xl pb-3">Enter Card Details</p>
-
-                      <div class="py-2">
-                        <label class="pb-2 text-ash text-small">Card No.</label>
-                        <div class="d-flex align-items-center gap-2">
-                          <div class="flex-grow-1">
-                            <input
-                              class="green-input w-100"
-                              type="text"
-                              value="1234 2536 2563 6985"
-                            />
-                          </div>
-                          <div style="min-width: 24px">
-                            <img src="assets/images/gt1.png" alt="g-tick" />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row g-2 gy-3 py-2 pb-3">
-                        <div class="col-md-6">
-                          <div>
-                            <label class="pb-2 text-ash text-small"
-                              >Expire Date MM/YY</label
-                            >
-                            <div class="d-flex align-items-center gap-2">
-                              <div class="flex-grow-1">
-                                <input
-                                  class="green-input w-100"
-                                  type="text"
-                                  value="12/25"
-                                />
-                              </div>
-                              <div style="min-width: 24px">
-                                <img src="assets/images/gt1.png" alt="g-tick" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div>
-                            <label class="pb-2 text-ash text-small">CVC</label>
-                            <div class="d-flex align-items-center gap-2">
-                              <div class="flex-grow-1">
-                                <input
-                                  class="green-input w-100"
-                                  type="password"
-                                  value="000"
-                                />
-                              </div>
-                              <div style="min-width: 24px">
-                                <img src="assets/images/gt1.png" alt="g-tick" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="d-flex py-3">
-                        <input type="checkbox" checked />
-                        <span class="text-small font-medium ms-2"
-                          >Save Card Information</span
-                        >
-                      </div>
-
-                      <button
-                        class="primary-button px-5"
-                        style="background: #2caae1"
-                      >
-                        Add Card
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-5">
-            <div class="cart-total">
-              <h2 class="text-3xl pb-3"><strong>Your Order Summery</strong></h2>
-              <br />
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <div class="left d-flex align-items-center">
-                      <div class="im-wrap m-0 position-relative">
-                        <img src="assets/images/thumb.png" alt="s" />
-                        <span class="number">3</span>
-                      </div>
-                      <div class="ps-2">
-                        <p class="font-medium text-lg" style="color: #1f2026">
-                          CRDO-FX
-                        </p>
-                        <p class="text-small font-medium text-small">
-                          Size: Small
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p class="text-xl text-ash font-medium">$75.00</p>
-                </div>
-              </div>
-              <hr />
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <div class="left d-flex align-items-center">
-                      <div class="im-wrap m-0 position-relative">
-                        <img src="assets/images/thumb.png" alt="s" />
-                        <span class="number">3</span>
-                      </div>
-                      <div class="ps-2">
-                        <p class="font-medium text-lg" style="color: #1f2026">
-                          CRDO-FX
-                        </p>
-                        <p class="text-small font-medium text-small">
-                          Size: Small
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p class="text-xl text-ash font-medium">$75.00</p>
-                </div>
-              </div>
-              <hr />
-              <div class="s-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <div class="left d-flex align-items-center">
-                      <div class="im-wrap m-0 position-relative">
-                        <img src="assets/images/thumb.png" alt="s" />
-                        <span class="number">3</span>
-                      </div>
-                      <div class="ps-2">
-                        <p class="font-medium text-lg" style="color: #1f2026">
-                          CRDO-FX
-                        </p>
-                        <p class="text-small font-medium text-small">
-                          Size: Small
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p class="text-xl text-ash font-medium">$75.00</p>
-                </div>
-              </div>
-
-              <hr />
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="font-medium">Total</p>
-                <p class="text-xl"><strong>$150.00</strong></p>
-              </div>
-              <br />
-              <button class="primary-button w-100" style="background: #2caae1">
-                Place Order
-              </button>
-            </div>
+            <ul class="p-0 d-flex align-items-center">
+              <li>
+                <a href="#"><img src="assets/images/fb.svg" alt="icon" /></a>
+              </li>
+              <li class="ms-3">
+                <a href="#"><img src="assets/images/insta.svg" alt="icon" /></a>
+              </li>
+              <li class="ms-3">
+                <a href="#">
+                  <img src="assets/images/pinerest.svg" alt="icon" />
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="#"><img src="assets/images/twit.svg" alt="icon" /></a>
+              </li>
+              <li class="ms-3">
+                <a href="#"><img src="assets/images/tik.svg" alt="icon" /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ===//end of product-information section === -->
+
+      <div class="container">
+        <nav class="navbar navbar-expand-lg position-relative">
+          <img
+            class="brand-image d-none d-lg-block"
+            src="assets/images/logo-main.png"
+            alt="logo"
+          />
+
+          <img class="d-lg-none" src="assets/images/logo-main.png" alt="logo" />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav icon d-flex ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-lg-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/images/flag.png" alt="ame" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img src="assets/images/flag.png" alt="ame" /><span
+                        class="ms-2"
+                        >Text</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img src="assets/images/flag.png" alt="ame" /><span
+                        class="ms-2"
+                        >Text</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item pe-lg-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">GBP</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">POUND</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="far fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="far fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="far fa-heart"></i>
+                  <span class="t-num">3</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="far fa-shopping-cart"></i>
+                  <span class="t-num">3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- === end of header section === -->
+
+    <main>
+      <!-- === product-information section start === -->
+      <section class="product-cart py-5">
+        <div class="container">
+          <div class="navigationss py-5">
+            <div
+              class="d-flex flex-wrap gap-3 align-items-center justify-content-between"
+            >
+              <div class="d-flex nav-l-wrap">
+                <a href="#" class="link-navs">
+                  <p class="num">1</p>
+                  <p>Shopping cart</p>
+                </a>
+                <a href="#" class="link-navs active">
+                  <p class="num">2</p>
+                  <p>Checkout details</p>
+                </a>
+                <a href="#" class="link-navs">
+                  <p class="num">3</p>
+                  <p>Order complete</p>
+                </a>
+              </div>
+              <a href="#" class="cont-btn">
+                <img
+                  width="12"
+                  class="me-2"
+                  src="assets/images/al.png"
+                  alt="al"
+                />
+                Continue shopping
+              </a>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-7">
+              <div class="cart-details payments">
+                <h2 class="font-medium text-3xl pb-3">Payment Method</h2>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-paypal-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      Paypal
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-creditCard-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      Credit Card
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-paypal-tab"
+                    tabindex="0"
+                  >
+                    <div class="paypal">
+                      <div class="border rounded p-4">
+                        <p class="font-medium text-lg">Your Information</p>
+
+                        <div
+                          class="py-2 my-2 p-3 rounded d-flex align-items-center"
+                          style="background: #dcf5d4"
+                        >
+                          <img
+                            width="22"
+                            src="assets/images/gtc.png"
+                            alt="green-tick"
+                          />
+                          <p class="text-ex-small ps-2">
+                            Congratulations! Your details have been successfully
+                            sent to the store.
+                          </p>
+                        </div>
+
+                        <hr />
+
+                        <div class="row gy-2">
+                          <div class="col-md-4">
+                            <p class="text-ash text-small">Full Name</p>
+                            <p class="font-medium text-small">David King</p>
+                          </div>
+                          <div class="col-md-5">
+                            <p class="text-ash text-small">Full Name</p>
+                            <p class="font-medium text-small">
+                              davidking@gmail.com
+                            </p>
+                          </div>
+                          <div class="col-md-3">
+                            <p class="text-ash text-small">Full Name</p>
+                            <p class="font-medium text-small">+00000000</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <br />
+
+                      <div class="border rounded p-4">
+                        <p class="font-medium text-xl pb-3">Login to Paypal</p>
+
+                        <div class="py-2">
+                          <label class="pb-2 text-ash text-small"
+                            >Eail or Phone Number</label
+                          >
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="flex-grow-1">
+                              <input
+                                class="green-input w-100"
+                                type="text"
+                                value="David King"
+                              />
+                            </div>
+                            <div style="min-width: 24px">
+                              <img src="assets/images/gt1.png" alt="g-tick" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="py-2 pb-3">
+                          <label class="pb-2 text-ash text-small"
+                            >Your Password *</label
+                          >
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="flex-grow-1">
+                              <input
+                                class="green-input w-100"
+                                type="password"
+                                value="David King"
+                              />
+                            </div>
+                            <div style="min-width: 24px">
+                              <img src="assets/images/gt1.png" alt="g-tick" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          class="primary-button px-5"
+                          style="background: #2caae1"
+                        >
+                          Sign in to Paypal
+                        </button>
+
+                        <div class="d-flex pt-3">
+                          <input type="checkbox" checked />
+                          <span class="text-small font-medium ms-2"
+                            >Save PayPal Account</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-creditCard-tab"
+                    tabindex="0"
+                  >
+                    <div class="credit-card">
+                      <div class="border rounded p-4">
+                        <p class="font-medium text-lg">Your Information</p>
+
+                        <div
+                          class="py-2 my-2 p-3 rounded d-flex align-items-center"
+                          style="background: #dcf5d4"
+                        >
+                          <img
+                            width="22"
+                            src="assets/images/gtc.png"
+                            alt="green-tick"
+                          />
+                          <p class="text-ex-small ps-2">
+                            Congratulations! Your details have been successfully
+                            sent to the store.
+                          </p>
+                        </div>
+
+                        <hr />
+
+                        <div class="row gy-2">
+                          <div class="col-md-4">
+                            <p class="text-ash text-small">Full Name</p>
+                            <p class="font-medium text-small">David King</p>
+                          </div>
+                          <div class="col-md-5">
+                            <p class="text-ash text-small">Full Name</p>
+                            <p class="font-medium text-small">
+                              davidking@gmail.com
+                            </p>
+                          </div>
+                          <div class="col-md-3">
+                            <p class="text-ash text-small">Full Name</p>
+                            <p class="font-medium text-small">+00000000</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="text-ash text-small">Address</p>
+                            <p class="font-medium text-small">
+                              +No. 12 Main Street, Los Angels, CA 20056
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <br />
+
+                      <div class="border rounded p-4">
+                        <p class="font-medium text-xl pb-3">
+                          Enter Card Details
+                        </p>
+
+                        <div class="py-2">
+                          <label class="pb-2 text-ash text-small"
+                            >Card No.</label
+                          >
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="flex-grow-1">
+                              <input
+                                class="green-input w-100"
+                                type="text"
+                                value="1234 2536 2563 6985"
+                              />
+                            </div>
+                            <div style="min-width: 24px">
+                              <img src="assets/images/gt1.png" alt="g-tick" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row g-2 gy-3 py-2 pb-3">
+                          <div class="col-md-6">
+                            <div>
+                              <label class="pb-2 text-ash text-small"
+                                >Expire Date MM/YY</label
+                              >
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="flex-grow-1">
+                                  <input
+                                    class="green-input w-100"
+                                    type="text"
+                                    value="12/25"
+                                  />
+                                </div>
+                                <div style="min-width: 24px">
+                                  <img
+                                    src="assets/images/gt1.png"
+                                    alt="g-tick"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div>
+                              <label class="pb-2 text-ash text-small"
+                                >CVC</label
+                              >
+                              <div class="d-flex align-items-center gap-2">
+                                <div class="flex-grow-1">
+                                  <input
+                                    class="green-input w-100"
+                                    type="password"
+                                    value="000"
+                                  />
+                                </div>
+                                <div style="min-width: 24px">
+                                  <img
+                                    src="assets/images/gt1.png"
+                                    alt="g-tick"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="d-flex py-3">
+                          <input type="checkbox" checked />
+                          <span class="text-small font-medium ms-2"
+                            >Save Card Information</span
+                          >
+                        </div>
+
+                        <button
+                          class="primary-button px-5"
+                          style="background: #2caae1"
+                        >
+                          Add Card
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="cart-total">
+                <h2 class="text-3xl pb-3">
+                  <strong>Your Order Summery</strong>
+                </h2>
+                <br />
+                <div class="s-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="left d-flex align-items-center">
+                        <div class="im-wrap m-0 position-relative">
+                          <img src="assets/images/thumb.png" alt="s" />
+                          <span class="number">3</span>
+                        </div>
+                        <div class="ps-2">
+                          <p class="font-medium text-lg" style="color: #1f2026">
+                            CRDO-FX
+                          </p>
+                          <p class="text-small font-medium text-small">
+                            Size: Small
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="text-xl text-ash font-medium">$75.00</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="s-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="left d-flex align-items-center">
+                        <div class="im-wrap m-0 position-relative">
+                          <img src="assets/images/thumb.png" alt="s" />
+                          <span class="number">3</span>
+                        </div>
+                        <div class="ps-2">
+                          <p class="font-medium text-lg" style="color: #1f2026">
+                            CRDO-FX
+                          </p>
+                          <p class="text-small font-medium text-small">
+                            Size: Small
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="text-xl text-ash font-medium">$75.00</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="s-item">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="left d-flex align-items-center">
+                        <div class="im-wrap m-0 position-relative">
+                          <img src="assets/images/thumb.png" alt="s" />
+                          <span class="number">3</span>
+                        </div>
+                        <div class="ps-2">
+                          <p class="font-medium text-lg" style="color: #1f2026">
+                            CRDO-FX
+                          </p>
+                          <p class="text-small font-medium text-small">
+                            Size: Small
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="text-xl text-ash font-medium">$75.00</p>
+                  </div>
+                </div>
+
+                <hr />
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font-medium">Total</p>
+                  <p class="text-xl"><strong>$150.00</strong></p>
+                </div>
+                <br />
+                <button
+                  class="primary-button w-100"
+                  style="background: #2caae1"
+                >
+                  Place Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===//end of product-information section === -->
+    </main>
+
+    <!-- off canvas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-body">
+        <div class="cart-total">
+          <h2 class="text-3xl pb-3"><strong>Your Order Summery</strong></h2>
+          <br />
+          <div class="s-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="left d-flex align-items-center">
+                  <div class="im-wrap m-0 position-relative">
+                    <img src="assets/images/thumb.png" alt="s" />
+                    <span class="number">3</span>
+                  </div>
+                  <div class="ps-2">
+                    <p class="font-medium text-lg" style="color: #1f2026">
+                      CRDO-FX
+                    </p>
+                    <p class="text-small font-medium text-small">Size: Small</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xl text-ash font-medium">$75.00</p>
+            </div>
+          </div>
+          <hr />
+          <div class="s-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="left d-flex align-items-center">
+                  <div class="im-wrap m-0 position-relative">
+                    <img src="assets/images/thumb.png" alt="s" />
+                    <span class="number">3</span>
+                  </div>
+                  <div class="ps-2">
+                    <p class="font-medium text-lg" style="color: #1f2026">
+                      CRDO-FX
+                    </p>
+                    <p class="text-small font-medium text-small">Size: Small</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xl text-ash font-medium">$75.00</p>
+            </div>
+          </div>
+          <hr />
+          <div class="s-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="left d-flex align-items-center">
+                  <div class="im-wrap m-0 position-relative">
+                    <img src="assets/images/thumb.png" alt="s" />
+                    <span class="number">3</span>
+                  </div>
+                  <div class="ps-2">
+                    <p class="font-medium text-lg" style="color: #1f2026">
+                      CRDO-FX
+                    </p>
+                    <p class="text-small font-medium text-small">Size: Small</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-xl text-ash font-medium">$75.00</p>
+            </div>
+          </div>
+
+          <hr />
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="font-medium">Total</p>
+            <p class="text-xl"><strong>$150.00</strong></p>
+          </div>
+          <br />
+          <button
+            type="button"
+            class="btn cont-btn p-2 d-block rounded text-center mb-2 w-100"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            style="border: 1px solid #175da5; color: #175da5"
+          >
+            <img width="12" class="me-2" src="assets/images/al.png" alt="al" />
+            Continue shopping
+          </button>
+
+          <button class="primary-button w-100" style="background: #2caae1">
+            Place Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- off canvas end -->
 
     <!-- === footer section start === -->
     <footer class="footer">
