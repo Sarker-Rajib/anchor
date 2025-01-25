@@ -66,14 +66,264 @@
 
         <div class="row gy-3">
           <div class="col-md-7">
-            <div class="cart-details">
-              <h2 class="font-medium text-3xl pb-3">My Cart</h2>
+            <div class="cart-details payments">
+              <h2 class="font-medium text-3xl pb-3">Payment Method</h2>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-paypal-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Paypal
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-creditCard-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Credit Card
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-paypal-tab"
+                  tabindex="0"
+                >
+                  <div class="paypal">
+                    <div class="border rounded p-4">
+                      <p class="font-medium text-lg">Your Information</p>
 
-              <div class="text-center pt-4 pt-xl-5">
-                <p class="conf">
-                  <img src="assets/images/tgg.png" alt="as" /> Cart has been
-                  updated
-                </p>
+                      <div
+                        class="py-2 my-2 p-3 rounded d-flex align-items-center"
+                        style="background: #dcf5d4"
+                      >
+                        <img
+                          width="22"
+                          src="assets/images/gtc.png"
+                          alt="green-tick"
+                        />
+                        <p class="text-ex-small ps-2">
+                          Congratulations! Your details have been successfully
+                          sent to the store.
+                        </p>
+                      </div>
+
+                      <hr />
+
+                      <div class="row gy-2">
+                        <div class="col-md-4">
+                          <p class="text-ash text-small">Full Name</p>
+                          <p class="font-medium text-small">David King</p>
+                        </div>
+                        <div class="col-md-5">
+                          <p class="text-ash text-small">Full Name</p>
+                          <p class="font-medium text-small">
+                            davidking@gmail.com
+                          </p>
+                        </div>
+                        <div class="col-md-3">
+                          <p class="text-ash text-small">Full Name</p>
+                          <p class="font-medium text-small">+00000000</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <br />
+
+                    <div class="border rounded p-4">
+                      <p class="font-medium text-xl pb-3">Login to Paypal</p>
+
+                      <div class="py-2">
+                        <label class="pb-2 text-ash text-small"
+                          >Eail or Phone Number</label
+                        >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="flex-grow-1">
+                            <input
+                              class="green-input w-100"
+                              type="text"
+                              value="David King"
+                            />
+                          </div>
+                          <div style="min-width: 24px">
+                            <img src="assets/images/gt1.png" alt="g-tick" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="py-2 pb-3">
+                        <label class="pb-2 text-ash text-small"
+                          >Your Password *</label
+                        >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="flex-grow-1">
+                            <input
+                              class="green-input w-100"
+                              type="password"
+                              value="David King"
+                            />
+                          </div>
+                          <div style="min-width: 24px">
+                            <img src="assets/images/gt1.png" alt="g-tick" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <button
+                        class="primary-button px-5"
+                        style="background: #2caae1"
+                      >
+                        Sign in to Paypal
+                      </button>
+
+                      <div class="d-flex pt-3">
+                        <input type="checkbox" checked />
+                        <span class="text-small font-medium ms-2"
+                          >Save PayPal Account</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-creditCard-tab"
+                  tabindex="0"
+                >
+                  <div class="credit-card">
+                    <div class="border rounded p-4">
+                      <p class="font-medium text-lg">Your Information</p>
+
+                      <div
+                        class="py-2 my-2 p-3 rounded d-flex align-items-center"
+                        style="background: #dcf5d4"
+                      >
+                        <img
+                          width="22"
+                          src="assets/images/gtc.png"
+                          alt="green-tick"
+                        />
+                        <p class="text-ex-small ps-2">
+                          Congratulations! Your details have been successfully
+                          sent to the store.
+                        </p>
+                      </div>
+
+                      <hr />
+
+                      <div class="row gy-2">
+                        <div class="col-md-4">
+                          <p class="text-ash text-small">Full Name</p>
+                          <p class="font-medium text-small">David King</p>
+                        </div>
+                        <div class="col-md-5">
+                          <p class="text-ash text-small">Full Name</p>
+                          <p class="font-medium text-small">
+                            davidking@gmail.com
+                          </p>
+                        </div>
+                        <div class="col-md-3">
+                          <p class="text-ash text-small">Full Name</p>
+                          <p class="font-medium text-small">+00000000</p>
+                        </div>
+                        <div class="col-12">
+                          <p class="text-ash text-small">Address</p>
+                          <p class="font-medium text-small">
+                            +No. 12 Main Street, Los Angels, CA 20056
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <br />
+
+                    <div class="border rounded p-4">
+                      <p class="font-medium text-xl pb-3">Enter Card Details</p>
+
+                      <div class="py-2">
+                        <label class="pb-2 text-ash text-small">Card No.</label>
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="flex-grow-1">
+                            <input
+                              class="green-input w-100"
+                              type="number"
+                              value="1234 2536 2563 6985"
+                            />
+                          </div>
+                          <div style="min-width: 24px">
+                            <img src="assets/images/gt1.png" alt="g-tick" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row g-2 gy-3 py-2 pb-3">
+                        <div class="col-md-6">
+                          <div>
+                            <label class="pb-2 text-ash text-small"
+                              >Expire Date MM/YY</label
+                            >
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="flex-grow-1">
+                                <input
+                                  class="green-input w-100"
+                                  type="text"
+                                  value="12/25"
+                                />
+                              </div>
+                              <div style="min-width: 24px">
+                                <img src="assets/images/gt1.png" alt="g-tick" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div>
+                            <label class="pb-2 text-ash text-small">CVC</label>
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="flex-grow-1">
+                                <input
+                                  class="green-input w-100"
+                                  type="password"
+                                  value="000"
+                                />
+                              </div>
+                              <div style="min-width: 24px">
+                                <img src="assets/images/gt1.png" alt="g-tick" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button
+                        class="primary-button px-5"
+                        style="background: #2caae1"
+                      >
+                        Add Card
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -267,42 +517,5 @@
     <!-- Swiper JS -->
     <script src="assets/vendor/bootstrap/js/popper.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-
-      function increase(button) {
-        let counter = button
-          .closest(".counter-container")
-          .querySelector(".counter");
-        counter.textContent = parseInt(counter.textContent) + 1;
-      }
-
-      function decrease(button) {
-        let counter = button
-          .closest(".counter-container")
-          .querySelector(".counter");
-        let currentValue = parseInt(counter.textContent);
-        if (currentValue > 0) {
-          counter.textContent = currentValue - 1;
-        }
-      }
-    </script>
   </body>
 </html>

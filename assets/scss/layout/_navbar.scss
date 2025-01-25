@@ -1,0 +1,86 @@
+.header {
+
+    .container {
+        @media(min-width:1200px) {
+            max-width: 1700px;
+        }
+
+    }
+
+
+    .navbar {
+        @media(min-width: 991px) {
+            padding: 25px 0;
+        }
+
+        .brand-image {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    @media(max-width: 991px) {
+                        text-align: center;
+                        display: inline-block;
+                        margin: auto;
+                    }
+                }
+
+                &.text {
+                    .nav-item {
+                        .nav-link {
+                            color: #727272;
+                            font-size: 14px;
+
+                            &.active {
+                                color: #175DA5;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                &.icon {
+
+                    a {
+                        position: relative;
+
+                        i {
+                            font-size: 20px;
+
+
+                            @media(max-width:991px) {
+                                font-size: 24px;
+                            }
+                        }
+
+                        .t-num {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            font-size: 12px;
+                            color: #fff;
+                            right: -3px;
+                            position: absolute;
+                            top: -3px;
+                            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #0A6EFF;
+
+
+                            @media(max-width:991px) {
+                                transform: translateX(8px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

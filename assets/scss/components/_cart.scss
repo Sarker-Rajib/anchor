@@ -58,27 +58,6 @@
             }
         }
 
-        .im-wrap {
-            border: 3px solid #EEEEEE;
-            margin-inline: 10px;
-            width: 80px;
-            text-align: center;
-
-            .number {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background: #ff0000;
-                font-size: 12px;
-                color: #fff;
-                right: -10px;
-                position: absolute;
-                top: -10px;
-            }
-        }
 
         .cart-details {
             background: #fff;
@@ -138,6 +117,20 @@
                 padding: 5px 20px;
                 font-weight: 600;
             }
+
+
+            &.payments {
+                .nav-pills {
+                    .nav-link {
+                        color: #777E90;
+
+                        &.active {
+                            color: #fff;
+                            background: #2CAAE1;
+                        }
+                    }
+                }
+            }
         }
 
         .cart-total {
@@ -178,5 +171,34 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.green-input {
+    display: inline-block;
+    border-radius: 14px;
+    border: 1px solid #45B26B;
+    padding: 12px;
+}
+
+.im-wrap {
+    border: 3px solid #EEEEEE;
+    margin-inline: 10px;
+    width: 80px;
+    text-align: center;
+
+    .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #ff0000;
+        font-size: 12px;
+        color: #fff;
+        right: -10px;
+        position: absolute;
+        top: -10px;
     }
 }
