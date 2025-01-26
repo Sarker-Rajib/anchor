@@ -597,6 +597,7 @@ body {
 }
 .products .product-card .text h3 {
   color: #423E3E;
+  font-family: "Poppins", serif;
 }
 .products .product-card .text p {
   font-family: "Lato", serif;
@@ -695,6 +696,31 @@ body {
     max-width: 1700px;
   }
 }
+.header .f-ccon a {
+  position: relative;
+}
+.header .f-ccon a i {
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  .header .f-ccon a i {
+    font-size: 24px;
+  }
+}
+.header .f-ccon a .t-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  right: -10px;
+  position: absolute;
+  top: -10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #0A6EFF;
+}
 @media (min-width: 991px) {
   .header .navbar {
     padding: 25px 0;
@@ -706,6 +732,11 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
+}
+@media (max-width: 991px) {
+  .header .navbar .mobile-icon {
+    width: 160px;
+  }
 }
 @media (max-width: 991px) {
   .header .navbar .navbar-collapse .navbar-nav .nav-item {
